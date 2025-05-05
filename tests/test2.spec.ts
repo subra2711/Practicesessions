@@ -3,7 +3,7 @@
 
 // Test_case 1 : To search amazon website for KURTAS and print the name,description,price of first three products
 
-  import test from '@playwright/test';
+import test from '@playwright/test';
 
   test.describe("test 2" , () => {
       test('test_case 1', async ({ page }) => {
