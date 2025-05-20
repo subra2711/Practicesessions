@@ -1,5 +1,5 @@
 
-
+// Test 2 : To search amazon website for KURTAS and shoes and print name,description,price
 
 // Test_case 1 : To search amazon website for KURTAS and print the name,description,price of first three products
 
@@ -9,7 +9,7 @@ import test from '@playwright/test';
       test('test_case 1', async ({ page }) => {
               await page.goto ('https://www.amazon.in/');
               await page.locator('#twotabsearchtextbox').click()
-              await page.locator('#twotabsearchtextbox').fill('kurta ')
+              await page.locator('#twotabsearchtextbox').fill('kurtas ')
               await page.locator('#sac-suggestion-row-1-cell-1').click()
         const resultSet = await page.locator('[data-component-type="s-search-result"]')
 
