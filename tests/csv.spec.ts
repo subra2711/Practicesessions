@@ -6,7 +6,7 @@ import { readCsv } from '../utils/csv.reader';
 test.describe("Amazon csv Test", () => {
     test('Select data from csv', async ({ page }) => {
         let i ;
-        const fileData = await readCsv("quriesAndAssertions.csv")
+        const fileData = await readCsv("csvfile.csv")
         console.log("fileData:", fileData)
         await page.goto ('https://www.amazon.in/');
 
