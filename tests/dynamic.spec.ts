@@ -2,12 +2,13 @@
 
 import { test, expect } from '@playwright/test';
 
-// Use environment variables or fallback defaults
 const filterKey = process.env.FILTER_KEY || 'Electronics';
 const brandName = process.env.BRAND_NAME || 'JBL';
 
-test.describe('Amazon Filter Dynamic Test', () => {
-
+test.describe('Amazon Filter Dynamic Test', () =>
+  
+  // Using hooks such as beforeEach and afterEach
+  {
   test.beforeEach(async ({ page }) => {
     await page.goto('https://www.amazon.in/');
   });
