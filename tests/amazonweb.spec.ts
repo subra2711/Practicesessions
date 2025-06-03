@@ -1,4 +1,3 @@
-
 // Test 1 : To search kurtas from amazon website and print the name,description,price of first three products
 
 import test from '@playwright/test';

@@ -35,7 +35,7 @@ test.describe("test 4", () => {
     for (let i = 0; i < count; i++) {
       const title = await resultSet.nth(i).locator('h2 span').textContent();
       const price = await resultSet.nth(i).locator('.a-price .a-price-whole').textContent();
-      console.log(`Product ${i + 1}: ${title?.trim()} - ₹${price?.trim()}`);
+      console.log(`Product ${i + 1}: ${title} - ₹${price}`);
     }
   }
 
